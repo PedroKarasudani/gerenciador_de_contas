@@ -17,5 +17,9 @@ public class TestandoListas {
 
         aulas.remove(0);
         System.out.println(aulas);
+
+        for (String string : aulas) {
+            System.out.println("Aula: " + string);            
+        }
     }
 }

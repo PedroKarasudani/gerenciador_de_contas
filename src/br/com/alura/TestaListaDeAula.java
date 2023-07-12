@@ -27,5 +27,7 @@ public class TestaListaDeAula {
         //java 8 posso usar dessa forma
         aulas.sort(Comparator.comparing(Aula::getTempo));
         System.out.println(aulas);
+
+        
     }
 }

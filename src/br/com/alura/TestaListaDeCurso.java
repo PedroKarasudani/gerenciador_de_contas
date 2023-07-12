@@ -12,5 +12,8 @@ public class TestaListaDeCurso {
 
         javaColecoes.getAulas().add(new Aula("Trabalhando com ArrayList", 21));
         System.out.println(aulas);
+
+        javaColecoes.adiciona(new Aula("Montando sistemas automatizados", 30));
+        System.out.println(aulas);
     }
 }

@@ -20,6 +20,8 @@ public class TestaListaDeCurso2 {
         Collections.sort(aulasCopia);
         System.out.println(aulasCopia);
         
+        System.out.println(javaColecoes2.getTempoTotal());
+        System.out.println(javaColecoes2);
     }
     
 

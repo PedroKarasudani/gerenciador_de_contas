@@ -10,8 +10,9 @@ public class TestaListaDeCurso {
         List<Aula> aulas = javaColecoes.getAulas();
         System.out.println(aulas);
 
-        javaColecoes.getAulas().add(new Aula("Trabalhando com ArrayList", 21));
-        System.out.println(aulas);
+        //Agora dessa forma abaixo lanca exception, por causa do Colletions adicionado no return
+        //javaColecoes.getAulas().add(new Aula("Trabalhando com ArrayList", 21));
+        //System.out.println(aulas);
 
         javaColecoes.adiciona(new Aula("Montando sistemas automatizados", 30));
         System.out.println(aulas);

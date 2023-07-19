@@ -22,16 +22,16 @@ public class Aluno {
         return numeroMatricula;
     }
 
-    @Override
-    public boolean equals(Object obj){
-        Aluno outroAluno = (Aluno) obj;
-        return this.nome.equals(outroAluno.nome);
-    }
+    // @Override
+    // public boolean equals(Object obj){
+    //     Aluno outroAluno = (Aluno) obj;
+    //     return this.nome.equals(outroAluno.nome);
+    // }
 
-    @Override
-    public int hashCode() {
-        return this.nome.hashCode();
-    }
+    // @Override
+    // public int hashCode() {
+    //     return this.nome.hashCode();
+    // }
 
 
     @Override

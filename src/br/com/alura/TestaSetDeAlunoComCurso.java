@@ -19,6 +19,8 @@ public class TestaSetDeAlunoComCurso {
        System.out.println(javaColecoes.estaMatriculado(a5)); // a5 esta matriculado por causa do javaColecoes.matricula(a5);
        
        Aluno mauricioa5 = new Aluno("Mauricio Aniche", 17645);
-       System.out.println(javaColecoes.estaMatriculado(mauricioa5));
+       System.out.println(javaColecoes.estaMatriculado(mauricioa5)); // por mais que tenha os mesmos dados, nao sao iguais
+
+       
     }
 }

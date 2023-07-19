@@ -37,7 +37,9 @@ public class Curso {
         return this.aulas.stream().mapToInt(Aula::getTempo).sum();
     }
 
-    
+    public boolean aulaCadastrada (Aula aula) {
+        return this.aulas.contains(aula);
+    }
 
     // public int getTempoTotal(){
     //     int tempoTotal = 0;

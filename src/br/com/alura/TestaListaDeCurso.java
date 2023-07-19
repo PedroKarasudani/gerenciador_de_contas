@@ -14,7 +14,11 @@ public class TestaListaDeCurso {
         //javaColecoes.getAulas().add(new Aula("Trabalhando com ArrayList", 21));
         //System.out.println(aulas);
 
+        Aula aula1 = new Aula("Montando sistemas automatizados", 30);
+
         javaColecoes.adiciona(new Aula("Montando sistemas automatizados", 30));
         System.out.println(aulas);
+
+        System.out.println(javaColecoes.aulaCadastrada(aula1));
     }
 }

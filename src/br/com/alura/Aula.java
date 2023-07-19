@@ -27,5 +27,22 @@ public class Aula implements Comparable<Aula> {
         return this.titulo.compareTo(outraAula.getTitulo());
     }
 
+  
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Aula other = (Aula) obj;
+        if (tempo != other.tempo)
+            return false;
+        return true;
+    }
+
+   
+    
     
 }

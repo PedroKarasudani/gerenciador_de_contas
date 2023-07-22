@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Set;
 
 public class Curso {
@@ -64,5 +65,14 @@ public class Curso {
     @Override
     public String toString() {
         return "[Curso: " + this.getNome() + "Tempo Total:" + this.getTempoTotal() + "[aulas: " + aulas +"]";
+    }
+
+    public Aluno buscaMatricula(int numero) {
+        for (Aluno aluno : alunos) {
+            if(aluno.getNumeroMatricula() == numero){
+                return aluno;
+            }
+        }
+        throw new NoSuchElementException("Matricula: " + numero + " nao encontrada!!");
     }
 }

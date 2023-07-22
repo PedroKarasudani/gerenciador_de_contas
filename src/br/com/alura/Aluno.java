@@ -38,7 +38,6 @@ public class Aluno {
         return this.nome.hashCode();
     }
 
-
     @Override
     public String toString() {
         return "Aluno [Nome=" + nome + ", Matricula=" + numeroMatricula + "]";

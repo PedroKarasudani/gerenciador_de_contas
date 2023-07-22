@@ -27,7 +27,15 @@ public class Aula implements Comparable<Aula> {
         return this.titulo.compareTo(outraAula.getTitulo());
     }
 
-  
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((titulo == null) ? 0 : titulo.hashCode());
+        result = prime * result + tempo;
+        return result;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -37,11 +45,18 @@ public class Aula implements Comparable<Aula> {
         if (getClass() != obj.getClass())
             return false;
         Aula other = (Aula) obj;
+        if (titulo == null) {
+            if (other.titulo != null)
+                return false;
+        } else if (!titulo.equals(other.titulo))
+            return false;
         if (tempo != other.tempo)
             return false;
         return true;
     }
 
+  
+    
    
     
     
